@@ -5,27 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expert Share</title>
-    <!-- bootstrap css link  -->
+    <!-- Bootstrap CSS Link --->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-     <!-----------------
-      google font  
-    ------------------>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-        body{
-          font-family: 'Poppins', sans-serif;
-        } 
-    </style>
+     <!--- External CSS --->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="container">
-        <!-- navbar start  -->
-        <nav class="navbar navbar-expand-lg bg-white pt-5">
+        <!--- Navbar Start --->
+        <nav class="navbar navbar-expand-lg container-lg bg-white pt-5 px-1 px-md-4 px-lg-0       navbar_sec">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bold fs-1" href="#">Expert Share</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <a class="navbar-brand fw-bold fs-1" href="#">Expert Share</a>
+                <div class="d-flex">
+                    <button class="btn btn-outline-success px-4 py-2 fw-bold fs-5 d-none d-md-block d-lg-none" type="submit">Register</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+              </div>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
@@ -55,6 +51,66 @@
             </div>
           </nav>
         <!-- navbar end  -->
+        
+        <!-- slider start -->
+        <section id="carouselExampleCaptions" class="carousel slide container-lg px-3 px-md-4 px-lg-0"
+            data-bs-ride="carousel">
+            <div class="carousel-inner carousel_header">
+                <div class="carousel-item active">
+                    <img src="images/cover/cover-1.png" class="img-fluid h-100 w-100" alt="...">
+                    <div class="carousel-caption carousel_content">
+                        <h1>Get Started Digital <br/> Learning</h1>
+                        <p>Expert Share was founded in May 2021. It is a for-profit massive open
+                            online course provider aimed at professional adults and students.</p>
+                        <button
+                            type="button" class="border-0 rounded-1 fs-6 btn_common text-white header_btn"> Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cover/cover-2.png" class="img-fluid h-100 w-100" alt="...">
+                    <div class="carousel-caption carousel_content">
+                        <h1>Learning that gets <br/> Valuable Skills</h1>
+                        <p>As of May 2022, the platform has more than 5k students, 20+ courses,
+                            and 50 instructors teaching courses in over 7 languages.</p>
+                        <button
+                            type="button" class="border-0 rounded-1 fs-6 btn_common text-white header_btn"> Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cover/cover-3.png" class="img-fluid h-100 w-100" alt="...">
+                    <div class="carousel-caption carousel_content">
+                        <h1>Unlock the power <br/> of your people</h1>
+                        <p>Students take courses primarily to improve job-related skills.
+                            Some courses generate credit toward technical certification.</p>
+                        <button
+                            type="button" class="border-0 rounded-1 fs-6 btn_common text-white header_btn"> Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <!-- slider end  -->
     </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

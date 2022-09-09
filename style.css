@@ -1,0 +1,56 @@
+/*-----------------
+    Google Font 
+----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ----------------
+    Common Styles 
+------------------*/
+
+.btn_common {
+    background-color: #289bde; 
+    padding: 8px 30px;
+}
+  
+  /* ----------------
+    Header Styles 
+  ------------------ */
+  
+.carousel_header {
+    background-color: #000;
+}
+.carousel_header img {
+    opacity: 0.5;
+}
+.carousel_img {
+    height: 100%;
+}
+.carousel_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-65%);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+  
+.carousel_content h1 {
+    font-size: clamp(1.7rem, 4vw, 4rem);
+}
+
+/* -----------------
+    Media Queries
+--------------------*/
+
+@media only screen and (max-width: 576px) {
+    .header_btn {
+        font-size: 10px;
+    }
+    .carousel_content {
+        transform: translateY(-80%);
+    }
+    .carousel .carousel-item {
+        height: 50vh;
+    }
+}
